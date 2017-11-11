@@ -21,7 +21,7 @@ p {
 header {
     position: absolute;
     top: 0;
-    height: 100px;
+    height: 5em;
     width: 100%;
     background-color: #00550b;
     z-index: 10;
@@ -154,7 +154,7 @@ input::placeholder {
 }
 
 
-@media screen and (max-width: 768px) {
+@media all and (max-width: 960px) {
     .no-mobile, .no-mobile * {
         display:none;
     }
@@ -164,8 +164,8 @@ input::placeholder {
     }
 
     img {
-        max-width: 15rem !important;
-        max-height: 20rem !important;
+        max-width: 30vh !important;
+        max-height: 40vw !important;
     }
 
     #root_container > section .col {
