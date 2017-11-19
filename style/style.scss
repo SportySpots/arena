@@ -29,6 +29,7 @@ h1 {
 p {
   margin-top: .5em;
   margin-bottom: .5em;
+  font-size: 150%;
 }
 
 a, a:visited {
@@ -265,8 +266,8 @@ input {
       border-left: .5em solid white;
       text-align: center;
     }
-    @media all and (max-width: $break_width) {
-      border: none;
+    @media all and (max-width: 780px) {
+      border: none !important;
     }
   }
 }
