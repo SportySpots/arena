@@ -11,7 +11,7 @@ function swallowError (error) {
     this.emit('end')
 }
 
-gulp.task('serve', ['build-styles'], function(gulpCallback) {
+gulp.task('serve', ['build-styles-live'], function(gulpCallback) {
     browserSync.init({
         server: './app/',
         open: true
