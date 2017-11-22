@@ -1,4 +1,4 @@
-var url = '//formspree.io/team@sportyspots.com';
+var url = '//formspree.io/admin@sportyspots.com';
 
 function sendFormspreeMail(obj) {
     var req = new XMLHttpRequest();
