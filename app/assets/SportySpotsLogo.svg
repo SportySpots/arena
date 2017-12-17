@@ -1,30 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="245px" height="50px" viewBox="0 0 245 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="75px" height="75px" viewBox="0 0 75 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
     <title>Logo</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="SportySpots-App-landing-page" transform="translate(-32.000000, -24.000000)">
-            <g id="BG">
-                <polygon id="Rectangle-3" fill="#1D823F" points="1 0 1301 0 1299.875 887.367188 1 839"></polygon>
-                <polygon id="Rectangle-5" fill-opacity="0.844344429" fill="#00353A" opacity="0.810575181" points="0 0 1299.76 0 1299.72533 76.6324013 0 100"></polygon>
-            </g>
-            <g id="Logo" transform="translate(32.000000, 24.000000)">
-                <g id="Group">
-                    <path d="M4.8,0 L45.2,0 L45.2,0 C47.8509668,4.2220883e-15 50,2.1490332 50,4.8 L50,45.2 L50,45.2 C50,47.8509668 47.8509668,50 45.2,50 L4.8,50 L4.8,50 C2.1490332,50 1.21282822e-15,47.8509668 8.8817842e-16,45.2 L0,4.8 L0,4.8 C-3.24649801e-16,2.1490332 2.1490332,-2.17756056e-15 4.8,-2.66453526e-15 Z" id="Rectangle-6" fill="#07D654"></path>
-                    <polygon id="Rectangle" fill="#FFFFFF" points="9 7 42 7 42 43 9 43"></polygon>
-                    <polygon id="Rectangle-3-Copy-5" fill="#248232" points="0 28 34 28 34 35 0 35"></polygon>
-                    <polygon id="Rectangle-3-Copy-4" fill="#248232" points="16 14 50 14 50 21 16 21"></polygon>
-                    <polygon id="Rectangle-2" fill="#2BA84A" points="0 7 9 7 9 43 0 43"></polygon>
-                    <polygon id="Rectangle-2-Copy-2" fill="#2BA84A" points="41 7 50 7 50 43 41 43"></polygon>
-                    <polygon id="Rectangle-3-Copy-2" points="0 43 50 43 50 50 0 50"></polygon>
-                    <polygon id="Rectangle-3-Copy" fill="#248232" points="9 0 42 0 42 7 9 7"></polygon>
-                    <polygon id="Rectangle-3-Copy-3" fill="#248232" points="9 43 42 43 42 50 9 50"></polygon>
+    <g id="Web-form-signup" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Web-Invite-Browser" transform="translate(-603.000000, -54.000000)">
+            <g id="splashScreen">
+                <g id="Logo" transform="translate(603.000000, 54.000000)">
+                    <path d="M4.8,0 L70.2,0 L70.2,8.8817842e-16 C72.8509668,4.01203719e-16 75,2.1490332 75,4.8 L75,70.2 L75,70.2 C75,72.8509668 72.8509668,75 70.2,75 L4.8,75 L4.8,75 C2.1490332,75 -1.45170704e-15,72.8509668 -1.77635684e-15,70.2 L0,4.8 L0,4.8 C-3.24649801e-16,2.1490332 2.1490332,-2.17756056e-15 4.8,-2.66453526e-15 Z" id="Rectangle-6" fill="#07D654"></path>
+                    <polygon id="Rectangle" fill="#FFFFFF" points="13.5 10.5 62.25 10.5 62.25 64.5 13.5 64.5"></polygon>
+                    <polygon id="Rectangle-3-Copy-5" fill="#248232" points="0 42.75 50.25 42.75 50.25 53.25 0 53.25"></polygon>
+                    <polygon id="Rectangle-3-Copy-4" fill="#248232" points="24.75 21 75 21 75 31.5 24.75 31.5"></polygon>
+                    <polygon id="Rectangle-2" fill="#2BA84A" points="0 10.5 13.5 10.5 13.5 64.5 0 64.5"></polygon>
+                    <polygon id="Rectangle-2-Copy-2" fill="#2BA84A" points="61.5 10.5 75 10.5 75 64.5 61.5 64.5"></polygon>
+                    <polygon id="Rectangle-3-Copy-2" points="0 64.5 75 64.5 75 75 0 75"></polygon>
+                    <polygon id="Rectangle-3-Copy" fill="#248232" points="13.5 0 62.25 0 62.25 10.5 13.5 10.5"></polygon>
+                    <polygon id="Rectangle-3-Copy-3" fill="#248232" points="13.5 64.5 62.25 64.5 62.25 75 13.5 75"></polygon>
                 </g>
-                <text id="SPORTYSPOTS" font-family="Rajdhani-Bold, Rajdhani" font-size="30" font-weight="bold" fill="#FFFFFF">
-                    <tspan x="74" y="33">SPORTYSPOTS</tspan>
-                </text>
             </g>
         </g>
     </g>

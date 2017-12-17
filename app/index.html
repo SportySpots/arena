@@ -1,82 +1,92 @@
-<html lang="en-US">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sportyspots</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SportySpots Contact Form</title>
     <link href="https://fonts.googleapis.com/css?family=Rajdhani:400,500,600" rel="stylesheet">
-    <link href="reset.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="/reset.css" rel="stylesheet" />
+    <link href="/css/style.css" rel="stylesheet" />
+    <script src="modernizr-custom.js"></script>
     <script src="formspree.js"></script>
     <script src="main.js"></script>
 </head>
 <body>
-    <div id="root_container">
-        <header>
-            <img id="logo" src="assets/Sportyspotslogo.png" />
-            <a href="/contact">Contact</a>
-        </header>
-        <section id="play">
-                <div class="col">
-                    <div class="leftalign">
-                        <h1>Play more sports</h1>
-                        <div id="form_join" class="no-mobile">
-                            <p>Join the worlds free sports club</p>
-                            <input placeholder="Your email address" id="input_email" name="email" />
-                            <button id="button_subscribe">Subscribe</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div>
-                        <img src="assets/SportySpotsOrganizeGame.png">
-                    </div>
-                    <div id="ball_container">
-                        <img src="assets/shadow.png">
-                        <img id="ball" src="assets/ball.png">
-                    </div>
-                </div>
-        </section>
-        <section id="plan" class="reverse">
-            <div class="col">
-                <div class="leftalign">
-                    <h1>Plan a game of sports</h1>
-                    <p>Easily set up a game with friends or other supporters</p>
-                </div>
-            </div>
-            <div class="col">
-                <div>
-                    <img src="assets/SportySpotsPlanAGame.png">
-                </div>
-            </div>
-        </section>
-        <section id="discover">
-            <div class="col">
-                <div class="leftalign">
-                    <h1>Discover all Sport facilities</h1>
-                    <p>Get access to a complete overview of all SportySpots in your town</p>
+    <header>
+        <img class="logo" src="assets/SportySpotsLogo.svg" alt="SportySpots logo" height="80" width="80" align="middle">
+        <h1>Sportyspots</h1>
+    </header>
+    <div class="container no-mobile col-1-1-1">
+        <div class="landscape">
+            <h1 class="title landscape toggle discover">Discover</h1>
+            <h1 class="title landscape toggle organize">Organize a game</h1>
+            <h1 class="title landscape toggle join">Join a game</h1>
+            <div class="wrapper">
+                <div class="contact">
+                    <form>
+                        <p class="full">
+                            <input type="text" name="fullname" placeholder="Full name">
+                        </p>
+                        <p class="full">
+                            <input type="email" name="email" placeholder="Email address">
+                        </p>
+                        <p class="full">
+                            <select>
+                                <option value="" hidden>Your favourite sport</option>
+                                <option value="football">Football</option>
+                                <option value="tennis">Tennis</option>
+                                <option value="basketball">Basketball</option>
+                                <option value="running">Running</option>
+                                <option value="bootcamp">Fitness/Bootcamp</option>
+                                <option value="jeudeboule">Jeu de Boule</option>
+                                <option value="tabletennis">Table tennis</option>
+                                <option value="swimming">Swimming</option>
+                                <option value="volleyball">(Beach) Volleyball</option>
+                                <option value="golf">Golf</option>
+                                <option value="skating">Skating</option>
+                                <option value="yoga">Yoga</option>
+                            </select>
+                        <p class="full">
+                            <button>Submit</button>
+                        </p>
+                    </form>
                 </div>
             </div>
-            <div class="col">
-                <div>
-                    <img src="assets/SPortySpotsGameOverview.png">
-                </div>
-            </div>
-        </section>
-        <section id="find" class="reverse">
-            <div class="col">
-                <div class="leftalign">
-                    <h1>Find people to play with</h1>
-                    <p>
-                        Find sport events to join. Competitive or recreative, you choose.
-                    </p>
-                </div>
-            </div>
-            <div class="col">
-                <div>
-                    <img src="assets/SportySportsSearch.png">
-                </div>
-            </div>
-        </section>
+        </div>
+        <div>
+            <img class="toggle discover" src="assets/SportySportsSearch.png">
+            <img class="toggle organize" src="assets/SportySpotsPlanAGame.png">
+            <img class="toggle join" src="assets/SportySpotsOrganizeGame.png">
+        </div>
+        <div>
+            <div class="title portrait toggle discover"><h1>Discover</h1></div>
+            <div class="title portrait toggle organize"><h1>Organize a game</h1></div>
+            <div class="title portrait toggle join"><h1>Join a game</h1></div>
+            <nav id="navigation">
+                <a href="discover">Discover</a>
+                <a href="organize">Organize</a>
+                <a href="join">Join</a>
+            </nav>
+            <div class="toggle discover">Get access to a complete overview of all the sportyspots in town.</div>
+            <div class="toggle organize">Easily plan a game of sports with your friend or other supporters.</div>
+            <div class="toggle join">Find sports games to join, see live check-ins & share match results.</div>
+        </div>
     </div>
+    <div class="container mobile">
+        <div>
+            <img src="assets/SportySportsSearch.png">
+            <div>Get access to a complete overview of all the sportyspots in town.</div>
+        </div>
+        <div>
+            <img src="assets/SportySpotsPlanAGame.png">
+            <div>Easily plan a game of sports with your friend or other supporters.</div>
+        </div>
+        <div>
+            <img src="assets/SportySpotsOrganizeGame.png">
+            <div>Find sports games to join, see live check-ins & share match results.</div>
+        </div>
+    </div>
+    <script>if(!Modernizr.svg){var i=document.getElementsByTagName("img"),j,y;for(j=i.length;j--;)y=i[j].src,y.match(/svg$/)&&(i[j].src=y.slice(0,-3)+"png")}</script>
 </body>
 </html>
