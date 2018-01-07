@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -11,82 +11,111 @@
     <script src="modernizr-custom.js"></script>
     <script src="formspree.js"></script>
     <script src="main.js"></script>
-</head>
-<body>
+  </head>
+
+  <body>
     <header>
-        <img class="logo" src="assets/SportySpotsLogo.svg" alt="SportySpots logo" height="80" width="80" align="middle">
-        <h1>Sportyspots</h1>
+      <img class="logo" src="assets/SportySpotsLogo.svg" alt="SportySpots logo" height="80" width="80" align="middle">
+      <h1>Sportyspots</h1>
     </header>
+
     <div class="container no-mobile col-1-1-1">
-        <div class="landscape">
-            <h1 class="title landscape toggle discover">Discover</h1>
-            <h1 class="title landscape toggle organize">Organize a game</h1>
-            <h1 class="title landscape toggle join">Join a game</h1>
-            <div class="wrapper">
-                <div class="contact">
-                    <form>
-                        <p class="full">
-                            <input type="text" name="fullname" placeholder="Full name">
-                        </p>
-                        <p class="full">
-                            <input type="email" name="email" placeholder="Email address">
-                        </p>
-                        <p class="full">
-                            <select>
-                                <option value="" hidden>Your favourite sport</option>
-                                <option value="football">Football</option>
-                                <option value="tennis">Tennis</option>
-                                <option value="basketball">Basketball</option>
-                                <option value="running">Running</option>
-                                <option value="bootcamp">Fitness/Bootcamp</option>
-                                <option value="jeudeboule">Jeu de Boule</option>
-                                <option value="tabletennis">Table tennis</option>
-                                <option value="swimming">Swimming</option>
-                                <option value="volleyball">(Beach) Volleyball</option>
-                                <option value="golf">Golf</option>
-                                <option value="skating">Skating</option>
-                                <option value="yoga">Yoga</option>
-                            </select>
-                        <p class="full">
-                            <button>Submit</button>
-                        </p>
-                    </form>
-                </div>
-            </div>
+      <div class="landscape">
+        <h2 class="title landscape toggle discover">Discover</h2>
+        <h2 class="title landscape toggle organize">Organize a game</h2>
+        <h2 class="title landscape toggle join">Join a game</h2>
+
+        <div class="wrapper">
+          <div class="contact">
+            <form>
+              <input type="text" name="fullname" placeholder="Full name">
+
+              <input type="email" name="email" placeholder="Email address">
+
+              <select>
+                            <option value="" hidden>Your favourite sport</option>
+                            <option value="football">Football</option>
+                            <option value="tennis">Tennis</option>
+                            <option value="basketball">Basketball</option>
+                            <option value="running">Running</option>
+                            <option value="bootcamp">Fitness/Bootcamp</option>
+                            <option value="jeudeboule">Jeu de Boule</option>
+                            <option value="tabletennis">Table tennis</option>
+                            <option value="swimming">Swimming</option>
+                            <option value="volleyball">(Beach) Volleyball</option>
+                            <option value="golf">Golf</option>
+                            <option value="skating">Skating</option>
+                            <option value="yoga">Yoga</option>
+                        </select>
+
+              <button>Submit</button>
+            </form>
+          </div>
         </div>
-        <div>
-            <img class="toggle discover" src="assets/SportySportsSearch.png">
-            <img class="toggle organize" src="assets/SportySpotsPlanAGame.png">
-            <img class="toggle join" src="assets/SportySpotsOrganizeGame.png">
+      </div>
+
+      <div>
+        <img class="toggle discover" src="assets/SportySportsSearch.png">
+        <img class="toggle organize" src="assets/SportySpotsPlanAGame.png">
+        <img class="toggle join" src="assets/SportySpotsOrganizeGame.png">
+      </div>
+
+      <div>
+        <div class="title portrait toggle discover">
+          <h1>Discover</h1>
         </div>
-        <div>
-            <div class="title portrait toggle discover"><h1>Discover</h1></div>
-            <div class="title portrait toggle organize"><h1>Organize a game</h1></div>
-            <div class="title portrait toggle join"><h1>Join a game</h1></div>
-            <nav id="navigation">
-                <a href="discover">Discover</a>
-                <a href="organize">Organize</a>
-                <a href="join">Join</a>
-            </nav>
-            <div class="toggle discover">Get access to a complete overview of all the sportyspots in town.</div>
-            <div class="toggle organize">Easily plan a game of sports with your friend or other supporters.</div>
-            <div class="toggle join">Find sports games to join, see live check-ins & share match results.</div>
+
+        <div class="title portrait toggle organize">
+          <h1>Organize a game</h1>
         </div>
+
+        <div class="title portrait toggle join">
+          <h1>Join a game</h1>
+        </div>
+
+        <nav id="navigation">
+          <a href="discover">Discover</a>
+          <a href="organize">Organize</a>
+          <a href="join">Join</a>
+        </nav>
+
+        <div class="toggle discover">
+          <p>Get access to a complete overview of all the sportyspots in town.</p>
+        </div>
+
+        <div class="toggle organize">
+          <p>Easily plan a game of sports with your friend or other supporters.</p>
+        </div>
+
+        <div class="toggle join">
+          <p>Find sports games to join, see live check-ins & share match results.</p>
+        </div>
+      </div>
     </div>
+
     <div class="container mobile">
-        <div>
-            <img src="assets/SportySportsSearch.png">
-            <div>Get access to a complete overview of all the sportyspots in town.</div>
-        </div>
-        <div>
-            <img src="assets/SportySpotsPlanAGame.png">
-            <div>Easily plan a game of sports with your friend or other supporters.</div>
-        </div>
-        <div>
-            <img src="assets/SportySpotsOrganizeGame.png">
-            <div>Find sports games to join, see live check-ins & share match results.</div>
-        </div>
+      <div>
+        <img src="assets/SportySportsSearch.png">
+        <div>Get access to a complete overview of all the sportyspots in town.</div>
+      </div>
+
+      <div>
+        <img src="assets/SportySpotsPlanAGame.png">
+        <div>Easily plan a game of sports with your friend or other supporters.</div>
+      </div>
+
+      <div>
+        <img src="assets/SportySpotsOrganizeGame.png">
+        <div>Find sports games to join, see live check-ins & share match results.</div>
+      </div>
     </div>
-    <script>if(!Modernizr.svg){var i=document.getElementsByTagName("img"),j,y;for(j=i.length;j--;)y=i[j].src,y.match(/svg$/)&&(i[j].src=y.slice(0,-3)+"png")}</script>
-</body>
+    
+    <script>
+      if (!Modernizr.svg) {
+        var i = document.getElementsByTagName("img"),
+          j, y;
+        for (j = i.length; j--;) y = i[j].src, y.match(/svg$/) && (i[j].src = y.slice(0, -3) + "png")
+      }
+    </script>
+  </body>
 </html>
