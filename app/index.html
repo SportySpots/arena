@@ -1,121 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>SportySpots Contact Form</title>
-    <link href="https://fonts.googleapis.com/css?family=Rajdhani:400,500,600" rel="stylesheet">
-    <link href="/reset.css" rel="stylesheet" />
-    <link href="/css/style.css" rel="stylesheet" />
-    <script src="modernizr-custom.js"></script>
-    <script src="formspree.js"></script>
-    <script src="main.js"></script>
-  </head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>SportySpots Contact Form</title>
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani:400,500,600" rel="stylesheet">
+        <link href="/reset.css" rel="stylesheet" />
+        <link href="/css/style.css" rel="stylesheet" />
+        <script src="modernizr-custom.js"></script>
+        <script src="formspree.js"></script>
+        <script src="main.js"></script>
+    </head>
 
-  <body>
-    <header>
-      <img class="logo" src="assets/SportySpotsLogo.svg" alt="SportySpots logo" height="80" width="80" align="middle">
-      <h1>Sportyspots</h1>
-    </header>
+    <body>
+        <header class="header row">
+            <div class="header__content col-md-12">
+                <img class="header__content--logo" src="assets/SportySpotsLogo.svg" alt="SportySpots logo" height="80" width="80" align="middle">
+                <h1 class="header__content--title">Sportyspots</h1>
+                <div class="header__content--page-title">
+                    <h2 class="title landscape toggle discover">Contact</h2>
+                </div>
+            </div>
+        </header>
 
-    <div class="container no-mobile col-1-1-1">
-      <div class="landscape">
-        <h2 class="title landscape toggle discover">Discover</h2>
-        <h2 class="title landscape toggle organize">Organize a game</h2>
-        <h2 class="title landscape toggle join">Join a game</h2>
+        <main class="row">
+            <div class="contact contact-section col-xs-12 col-md-4"> <!-- Remove contact -->
+                <div class="contact-section__title">
+                    <h2 class="title landscape toggle discover">Discover</h2>
+                    <h2 class="title landscape toggle organize">Organize a game</h2>
+                    <h2 class="title landscape toggle join">Join a game</h2>
+                </div>
 
-        <div class="wrapper">
-          <div class="contact">
-            <form>
-              <input type="text" name="fullname" placeholder="Full name">
+                <form class="contact-section__form">
+                    <input class="contact-section__form--form-element" type="text" name="fullname" placeholder="Full name">
 
-              <input type="email" name="email" placeholder="Email address">
+                    <input class="contact-section__form--form-element" type="email" name="email" placeholder="Email address">
 
-              <select>
-                            <option value="" hidden>Your favourite sport</option>
-                            <option value="football">Football</option>
-                            <option value="tennis">Tennis</option>
-                            <option value="basketball">Basketball</option>
-                            <option value="running">Running</option>
-                            <option value="bootcamp">Fitness/Bootcamp</option>
-                            <option value="jeudeboule">Jeu de Boule</option>
-                            <option value="tabletennis">Table tennis</option>
-                            <option value="swimming">Swimming</option>
-                            <option value="volleyball">(Beach) Volleyball</option>
-                            <option value="golf">Golf</option>
-                            <option value="skating">Skating</option>
-                            <option value="yoga">Yoga</option>
-                        </select>
+                    <select class="contact-section__form--form-element">
+                        <option value="" hidden>Your favourite sport</option>
+                        <option value="football">Football</option>
+                        <option value="tennis">Tennis</option>
+                        <option value="basketball">Basketball</option>
+                        <option value="running">Running</option>
+                        <option value="bootcamp">Fitness/Bootcamp</option>
+                        <option value="jeudeboule">Jeu de Boule</option>
+                        <option value="tabletennis">Table tennis</option>
+                        <option value="swimming">Swimming</option>
+                        <option value="volleyball">(Beach) Volleyball</option>
+                        <option value="golf">Golf</option>
+                        <option value="skating">Skating</option>
+                        <option value="yoga">Yoga</option>
+                    </select>
 
-              <button>Submit</button>
-            </form>
-          </div>
-        </div>
-      </div>
+                    <button class="contact-section__form--form-element">Submit</button>
+                </form>
+            </div>
 
-      <div>
-        <img class="toggle discover" src="assets/SportySportsSearch.png">
-        <img class="toggle organize" src="assets/SportySpotsPlanAGame.png">
-        <img class="toggle join" src="assets/SportySpotsOrganizeGame.png">
-      </div>
+            <div class="col-xs-12 col-md-4">
+                <img class="toggle discover" src="assets/SportySportsSearch.png">
+                <img class="toggle organize" src="assets/SportySpotsPlanAGame.png">
+                <img class="toggle join" src="assets/SportySpotsOrganizeGame.png">
+            </div>
 
-      <div>
-        <div class="title portrait toggle discover">
-          <h1>Discover</h1>
-        </div>
+            <div class="col-xs-12 col-md-4">
+                <div class="title portrait toggle discover">
+                    <h1>Discover</h1>
+                </div>
 
-        <div class="title portrait toggle organize">
-          <h1>Organize a game</h1>
-        </div>
+                <div class="title portrait toggle organize">
+                    <h1>Organize a game</h1>
+                </div>
 
-        <div class="title portrait toggle join">
-          <h1>Join a game</h1>
-        </div>
+                <div class="title portrait toggle join">
+                    <h1>Join a game</h1>
+                </div>
 
-        <nav id="navigation">
-          <a href="discover">Discover</a>
-          <a href="organize">Organize</a>
-          <a href="join">Join</a>
-        </nav>
+                <nav id="navigation">
+                    <a href="discover">Discover</a>
+                    <a href="organize">Organize</a>
+                    <a href="join">Join</a>
+                </nav>
 
-        <div class="toggle discover">
-          <p>Get access to a complete overview of all the sportyspots in town.</p>
-        </div>
+                <div class="toggle discover">
+                    <p>Get access to a complete overview of all the sportyspots in town.</p>
+                </div>
 
-        <div class="toggle organize">
-          <p>Easily plan a game of sports with your friend or other supporters.</p>
-        </div>
+                <div class="toggle organize">
+                    <p>Easily plan a game of sports with your friend or other supporters.</p>
+                </div>
 
-        <div class="toggle join">
-          <p>Find sports games to join, see live check-ins & share match results.</p>
-        </div>
-      </div>
-    </div>
+                <div class="toggle join">
+                    <p>Find sports games to join, see live check-ins & share match results.</p>
+                </div>
+            </div>
+        </main>
 
-    <div class="container mobile">
-      <div>
-        <img src="assets/SportySportsSearch.png">
-        <div>Get access to a complete overview of all the sportyspots in town.</div>
-      </div>
+        <!-- <div class="container mobile">
+            <div>
+                <img src="assets/SportySportsSearch.png">
+                <div>Get access to a complete overview of all the sportyspots in town.</div>
+            </div>
 
-      <div>
-        <img src="assets/SportySpotsPlanAGame.png">
-        <div>Easily plan a game of sports with your friend or other supporters.</div>
-      </div>
+            <div>
+                <img src="assets/SportySpotsPlanAGame.png">
+                <div>Easily plan a game of sports with your friend or other supporters.</div>
+            </div>
 
-      <div>
-        <img src="assets/SportySpotsOrganizeGame.png">
-        <div>Find sports games to join, see live check-ins & share match results.</div>
-      </div>
-    </div>
-    
-    <script>
-      if (!Modernizr.svg) {
-        var i = document.getElementsByTagName("img"),
-          j, y;
-        for (j = i.length; j--;) y = i[j].src, y.match(/svg$/) && (i[j].src = y.slice(0, -3) + "png")
-      }
-    </script>
-  </body>
+            <div>
+                <img src="assets/SportySpotsOrganizeGame.png">
+                <div>Find sports games to join, see live check-ins & share match results.</div>
+            </div>
+        </div> -->
+
+        <script>
+            if (!Modernizr.svg) {
+                var i = document.getElementsByTagName("img"),
+                    j, y;
+                for (j = i.length; j--;) y = i[j].src, y.match(/svg$/) && (i[j].src = y.slice(0, -3) + "png")
+            }
+        </script>
+    </body>
 </html>

@@ -1,0 +1,18 @@
+.header {
+  .header__content {
+    display: flex;
+    align-items: center;
+
+    .header__content--logo {
+      max-width: 60px;
+    }
+
+    .header__content--title {
+      margin-left: 20px;
+    }
+
+    .header__content--page-title {
+      margin-left: 40px;
+    }
+  }
+}
