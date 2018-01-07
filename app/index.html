@@ -6,7 +6,6 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>SportySpots Contact Form</title>
         <link href="https://fonts.googleapis.com/css?family=Rajdhani:400,500,600" rel="stylesheet">
-        <link href="/reset.css" rel="stylesheet" />
         <link href="/css/style.css" rel="stylesheet" />
         <script src="modernizr-custom.js"></script>
         <script src="formspree.js"></script>
@@ -24,74 +23,64 @@
             </div>
         </header>
 
-        <main class="row">
-            <div class="contact contact-section col-xs-12 col-md-4"> <!-- Remove contact -->
-                <div class="contact-section__title">
-                    <h2 class="title landscape toggle discover">Discover</h2>
-                    <h2 class="title landscape toggle organize">Organize a game</h2>
-                    <h2 class="title landscape toggle join">Join a game</h2>
+        <main>
+            <div class="row">
+                <div class="contact contact-section col-xs-12 col-md-4"> <!-- Remove contact -->
+                    <div class="contact-section__title">
+                        <h2 class="contact-section__title--title toggle discover">Discover</h2>
+                        <h2 class="contact-section__title--title toggle organize">Organize a game</h2>
+                        <h2 class="contact-section__title--title toggle join">Join a game</h2>
+                    </div>
+
+                    <form class="contact-section__form">
+                        <input class="contact-section__form--form-element" type="text" name="fullname" placeholder="Full name">
+
+                        <input class="contact-section__form--form-element" type="email" name="email" placeholder="Email address">
+
+                        <select class="contact-section__form--form-element">
+                            <option value="" hidden>Your favourite sport</option>
+                            <option value="football">Football</option>
+                            <option value="tennis">Tennis</option>
+                            <option value="basketball">Basketball</option>
+                            <option value="running">Running</option>
+                            <option value="bootcamp">Fitness/Bootcamp</option>
+                            <option value="jeudeboule">Jeu de Boule</option>
+                            <option value="tabletennis">Table tennis</option>
+                            <option value="swimming">Swimming</option>
+                            <option value="volleyball">(Beach) Volleyball</option>
+                            <option value="golf">Golf</option>
+                            <option value="skating">Skating</option>
+                            <option value="yoga">Yoga</option>
+                        </select>
+
+                        <button class="contact-section__form--form-element">Submit</button>
+                    </form>
                 </div>
 
-                <form class="contact-section__form">
-                    <input class="contact-section__form--form-element" type="text" name="fullname" placeholder="Full name">
-
-                    <input class="contact-section__form--form-element" type="email" name="email" placeholder="Email address">
-
-                    <select class="contact-section__form--form-element">
-                        <option value="" hidden>Your favourite sport</option>
-                        <option value="football">Football</option>
-                        <option value="tennis">Tennis</option>
-                        <option value="basketball">Basketball</option>
-                        <option value="running">Running</option>
-                        <option value="bootcamp">Fitness/Bootcamp</option>
-                        <option value="jeudeboule">Jeu de Boule</option>
-                        <option value="tabletennis">Table tennis</option>
-                        <option value="swimming">Swimming</option>
-                        <option value="volleyball">(Beach) Volleyball</option>
-                        <option value="golf">Golf</option>
-                        <option value="skating">Skating</option>
-                        <option value="yoga">Yoga</option>
-                    </select>
-
-                    <button class="contact-section__form--form-element">Submit</button>
-                </form>
-            </div>
-
-            <div class="col-xs-12 col-md-4">
-                <img class="toggle discover" src="assets/SportySportsSearch.png">
-                <img class="toggle organize" src="assets/SportySpotsPlanAGame.png">
-                <img class="toggle join" src="assets/SportySpotsOrganizeGame.png">
-            </div>
-
-            <div class="col-xs-12 col-md-4">
-                <div class="title portrait toggle discover">
-                    <h1>Discover</h1>
+                <div class="col-xs-12 col-md-4">
+                    <img class="toggle discover" src="assets/SportySportsSearch.png">
+                    <img class="toggle organize" src="assets/SportySpotsPlanAGame.png">
+                    <img class="toggle join" src="assets/SportySpotsOrganizeGame.png">
                 </div>
 
-                <div class="title portrait toggle organize">
-                    <h1>Organize a game</h1>
-                </div>
+                <div class="col-xs-12 col-md-4">
+                    <nav id="navigation" class="navigation">
+                        <a href="discover">Discover</a>
+                        <a href="organize">Organize</a>
+                        <a href="join">Join</a>
+                    </nav>
 
-                <div class="title portrait toggle join">
-                    <h1>Join a game</h1>
-                </div>
+                    <div class="toggle discover">
+                        <p>Get access to a complete overview of all the sportyspots in town.</p>
+                    </div>
 
-                <nav id="navigation">
-                    <a href="discover">Discover</a>
-                    <a href="organize">Organize</a>
-                    <a href="join">Join</a>
-                </nav>
+                    <div class="toggle organize">
+                        <p>Easily plan a game of sports with your friend or other supporters.</p>
+                    </div>
 
-                <div class="toggle discover">
-                    <p>Get access to a complete overview of all the sportyspots in town.</p>
-                </div>
-
-                <div class="toggle organize">
-                    <p>Easily plan a game of sports with your friend or other supporters.</p>
-                </div>
-
-                <div class="toggle join">
-                    <p>Find sports games to join, see live check-ins & share match results.</p>
+                    <div class="toggle join">
+                        <p>Find sports games to join, see live check-ins & share match results.</p>
+                    </div>
                 </div>
             </div>
         </main>

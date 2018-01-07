@@ -1,24 +1,8 @@
-
-.landscape {
-  @include bp(max, $tablet) {
-    display: none !important;
-  }
-}
-
-.portrait {
-  @include bp(min, $tablet) {
-    display: none !important;
-  }
-}
-
 * {
   box-sizing: border-box;
 }
 
 body {
-  @include bp(min, $phone) {
-    background: url("../assets/SSBG.svg");
-  }
   color: #ffffff;
   font-family: 'Rajdhani', sans-serif;
 }
@@ -30,23 +14,14 @@ body {
   &.active {
     display: block;
   }
-  @include bp(max, $phone) {
-    display: block;
-  }
 }
 
 .mobile {
   display: none;
-  @include bp(max, $phone) {
-    display: block;
-  }
 }
 
 .no-mobile {
   display: block;
-  @include bp(max, $phone) {
-    display: none !important;
-  }
 }
 
 .container.mobile {
@@ -63,21 +38,6 @@ body {
 
   > div:nth-child(odd) {
     background-color: $color_green;
-  }
-}
-
-.col-1-1-1 {
-  display: flex;
-  flex-wrap: wrap;
-
-  > div {
-    width: 33.3%;
-    @include bp(max, $tablet) {
-      width: 50%;
-    }
-    @include bp(max, $phone) {
-      width: 100%;
-    }
   }
 }
 

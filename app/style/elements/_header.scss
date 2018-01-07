@@ -1,6 +1,5 @@
 .header {
-  background-color: $color_dark_green;
-  padding: 5em 1em 1em;
+  padding: 3em 2em 1em;
   transform: rotate(-2deg) translateY(-50px);
 
   .header__content {
@@ -14,6 +13,7 @@
 
     .header__content--title {
       margin-left: 20px;
+      text-transform: uppercase;
     }
 
     .header__content--page-title {

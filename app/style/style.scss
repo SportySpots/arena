@@ -1,3 +1,7 @@
+// Vendor imports
+@import 'vendor/grid';
+@import 'vendor/include-media';
+
 //Base imports
 
 @import 'base/variables';
@@ -9,9 +13,6 @@
 @import 'elements/global';
 @import 'elements/header';
 @import 'elements/form';
-
-// Vendor imports
-@import 'vendor/grid';
 
 // Old styling
 @import 'base/old';
