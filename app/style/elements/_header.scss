@@ -1,7 +1,12 @@
 .header {
+  background-color: $color_dark_green;
+  padding: 5em 1em 1em;
+  transform: rotate(-2deg) translateY(-50px);
+
   .header__content {
     display: flex;
     align-items: center;
+    transform: rotate(2deg);
 
     .header__content--logo {
       max-width: 60px;
