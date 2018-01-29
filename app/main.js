@@ -31,4 +31,12 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   activateClass(activeNavItem);
+
+  $(".landing").addClass("active");
+
+  $(".navitem").click(function() {
+    $(".navitem.active").removeClass("active");
+    $(this).toggleClass("active");
+  });
+
 });
