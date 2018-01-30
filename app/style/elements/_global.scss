@@ -1,8 +1,13 @@
 body {
+  overflow-x: hidden;
+
   background: url('../assets/desktop-bg.svg') no-repeat center center fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  overflow-x: hidden;
+
+  * {
+    transition: .3s all;
+  }
 }
 
 main {
@@ -16,54 +21,79 @@ main {
 }
 
 .contact-section {
+  margin: 2em auto;
+
   .contact-section__title--title {
-    font-size: 64px;
     margin: 0;
-    font-weight: 600;
-  }
 
-  .contact-section__subtitle {
-    margin-top: 56px;
+    font-size: 4em;
+    font-weight: 600;
   }
 }
 
-.contact-section {
+.impression-section {
+  margin: 2em auto;
 
-}
+  .impression-section__nav {
+    text-align: center;
 
-.navigation {
-  a {
-    color: $white;
-    text-decoration: none;
-    font-size: 18px;
-    margin-right: 12px;
-    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 2em;
 
-    &.active {
-      border-bottom: 2px solid $white;
+    .active {
+      color: $gold;
     }
   }
 }
 
-.discover__description {
-  font-size: 34px;
-  font-weight: 600;
-}
+.more-info-section {
+  margin: 2em auto;
 
-.footer__text {
-  text-align: center;
+  .discover, .organize, .join {
+    @include media(">large") {
+      height: 23em;
+    }
+  }
 
-  @include media(">large") {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+  .discover__description {
+    font-size: 2em;
+    font-weight: 600;
+  }
+
+  .call-to-action {
+    margin: 0 .5em;
+
+    .call-to-action__image {
+      width: 10em;
+    }
   }
 }
+
+.navigation {
+  @include media(">large") {
+    margin-top: 5em;
+  }
+
+  a {
+    margin-right: 1em;
+
+    text-decoration: none;
+
+    color: $white;
+
+    font-size: 1.2em;
+    font-weight: 600;
+
+    &.active {
+      border-bottom: .1em solid $white;
+    }
+  }
+}
+
 
 //temp
 
 img.toggle {
-  width: 300px;
+  width: 20em;
   margin: 0 auto;
 }

@@ -1,14 +1,14 @@
-document.addEventListener("DOMContentLoaded", function() {
-  // document.getElementById("button_subscribe").addEventListener("click", function() {
-  //     document.getElementById("button_subscribe").setAttribute('disabled', 'disabled');
-  //     document.getElementById("button_subscribe").innerHTML = 'Thank you!';
-  //     var email = document.getElementById("input_email").value;
+document.addEventListener('DOMContentLoaded', function() {
+  // document.getElementById('button_subscribe').addEventListener('click', function() {
+  //     document.getElementById('button_subscribe').setAttribute('disabled', 'disabled');
+  //     document.getElementById('button_subscribe').innerHTML = 'Thank you!';
+  //     var email = document.getElementById('input_email').value;
   //     sendFormspreeMail({
   //         email: email
   //     });
   // });
 
-  var nav = document.getElementById("navigation");
+  var nav = document.getElementById('navigation');
   var activeNavItem = nav.children[0].getAttribute('href');
 
   function activateClass(className) {
@@ -32,11 +32,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
   activateClass(activeNavItem);
 
-  $(".landing").addClass("active");
+  $('.landing').addClass('active');
 
-  $(".navitem").click(function() {
-    $(".navitem.active").removeClass("active");
-    $(this).toggleClass("active");
+  $('.navitem').click(function() {
+    $('.navitem.active').removeClass('active');
+    $(this).toggleClass('active');
   });
 
 });
