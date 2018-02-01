@@ -17,14 +17,15 @@ gulp.task('serve', ['build-styles-live'], function(gulpCallback) {
         open: true
     }, function callback() {
         gulp.watch('app/index.html', browserSync.reload);
-        gulp.watch('app/style/*.scss', ['build-styles-live']);
+        gulp.watch('app/main.js', browserSync.reload);
+        gulp.watch('app/style/**/*.scss', ['build-styles-live']);
         gulpCallback();
     });
 });
 
 // run sass then stream resulting css to output dir and to BrowserSync
 gulp.task('build-styles-live', function() {
-    return gulp.src('app/style/*.scss')
+    return gulp.src('app/style/**/*.scss')
         .pipe(sass())
         .on('error', swallowError)
         .pipe(gulp.dest('app/css'))
@@ -42,7 +43,7 @@ gulp.task('build', ['copy-app-folder'], function() {
         cssnano
     ];
 
-    return gulp.src('app/style/*.scss')
+    return gulp.src('app/style/**/*.scss')
         .pipe(sass())
         .pipe(postcss(plugins))
         .pipe(gulp.dest('dist/css'))

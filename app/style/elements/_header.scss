@@ -1,0 +1,45 @@
+.header {
+  .header-bg {
+    display: none;
+    position: absolute;
+    background-color: $color_dark_green;
+    width: 100%;
+    height: 12em;
+    left: 0;
+    right: 0;
+    top: -2em;
+    z-index: -1;
+    transform: rotate(-2deg);
+
+    @include media(">medium") {
+      display: block;
+    }
+  }
+
+  .header-content {
+    @include media(">medium") {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+    }
+
+    .header-content__wrap {
+      display: flex;
+
+      .header-content__wrap--logo {
+        max-width: 4em;
+      }
+
+      .header-content__wrap--title {
+        margin: .1em 0 0 .5em;
+
+        text-transform: uppercase;
+      }
+    }
+    .header-content--page-title {
+      @include media(">medium") {
+        margin: .1em 0 0 2em;
+      }
+    }
+  }
+}
