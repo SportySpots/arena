@@ -125,6 +125,7 @@ main {
     font-size: 1.2em;
     font-weight: 600;
     display: inline-block;
+    border-bottom: .1em solid transparent;
     &.active {
       border-bottom: .1em solid $white;
       display: inline-block;
