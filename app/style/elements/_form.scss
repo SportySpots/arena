@@ -33,6 +33,10 @@
   color: #000;
 }
 
+.contact form input:disabled {
+  color: #cacaca;
+}
+
 .contact form input:focus::-webkit-input-placeholder {
   color: #cccccc;
 }
@@ -100,6 +104,11 @@
 
 .contact form button:focus {
   background: #383838;
+}
+
+.contact form button:disabled {
+  background-color: rgb(58, 58, 58);
+  box-shadow: none;
 }
 
 .contact form select {
