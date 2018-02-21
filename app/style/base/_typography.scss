@@ -13,6 +13,10 @@ p {
   margin-bottom: 1.3em;
 }
 
+a {
+  color: $gold;
+}
+
 h1,
 h2,
 h3,
@@ -37,7 +41,14 @@ h4 {
   font-size: 1.414em;
 }
 
+h5 {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
 .font_small,
 small {
   font-size: 0.707em;
 }
+
+
