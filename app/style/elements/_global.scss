@@ -80,7 +80,7 @@ main {
 .more-info-section {
   margin: 2em auto;
 
-  .discover, .organize, .join {
+  div.discover, div.organize, div.join {
     @include media(">large") {
       height: 23em;
     }
@@ -124,9 +124,10 @@ main {
 
     font-size: 1.2em;
     font-weight: 600;
-
+    display: inline-block;
     &.active {
       border-bottom: .1em solid $white;
+      display: inline-block;
     }
   }
 }

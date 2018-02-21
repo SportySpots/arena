@@ -87,9 +87,9 @@
 
             <div class="col-xs-12 col-md-4 more-info-section">
                 <nav id="navigation" class="navigation">
-                    <a class="navitem landing" href="discover">Ontdek</a>
-                    <a class="navitem" href="organize">Organiseer</a>
-                    <a class="navitem" href="join">Doe mee</a>
+                    <a class="navitem toggle discover" href="discover">Ontdek</a>
+                    <a class="navitem toggle organize" href="organize">Organiseer</a>
+                    <a class="navitem toggle join" href="join">Doe mee</a>
                 </nav>
 
                 <div class="toggle discover">
@@ -127,8 +127,6 @@
             for (j = i.length; j--;) y = i[j].src, y.match(/svg$/) && (i[j].src = y.slice(0, -3) + "png")
         }
     </script>
-
-    <script src="http://code.jquery.com/jquery-3.3.1.slim.js" integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA=" crossorigin="anonymous"></script>
 </body>
 
 </html>

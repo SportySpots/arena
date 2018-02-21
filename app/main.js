@@ -1,5 +1,16 @@
 document.addEventListener('DOMContentLoaded', function() {
-  
+  var sliderTimer = null;
+  var classes = ['discover', 'organize', 'join'];
+  var currentIndex = 0;
+  var sliderSpeed = 6000;
+  function slideToNext() {
+    currentIndex = (currentIndex + 1) % classes.length;
+    activateClass(classes[currentIndex]);
+    sliderTimer = window.setTimeout(slideToNext, sliderSpeed);
+  }
+  window.setTimeout(slideToNext, sliderSpeed);
+
+
   document.getElementById('button_subscribe').addEventListener('click', function() {
       document.getElementById('button_subscribe').setAttribute('disabled', 'disabled');
       document.getElementById('input_email').setAttribute('disabled', 'disabled');
@@ -30,17 +41,18 @@ document.addEventListener('DOMContentLoaded', function() {
     nav.children[i].addEventListener('click', function(e) {
       e.preventDefault();
       activateClass(this.getAttribute('href'));
+      window.clearTimeout(sliderTimer);
       return false;
     });
   }
 
   activateClass(activeNavItem);
 
-  $('.landing').addClass('active');
+  // $('.landing').addClass('active');
 
-  $('.navitem').click(function() {
-    $('.navitem.active').removeClass('active');
-    $(this).toggleClass('active');
-  });
+  // $('.navitem').click(function() {
+    // $('.navitem.active').removeClass('active');
+    // $(this).toggleClass('active');
+  // });
 
 });
