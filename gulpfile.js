@@ -17,6 +17,7 @@ gulp.task('serve', ['build-styles-live'], function(gulpCallback) {
         open: true
     }, function callback() {
         gulp.watch('app/index.html', browserSync.reload);
+        gulp.watch('app/main.js', browserSync.reload);
         gulp.watch('app/style/**/*.scss', ['build-styles-live']);
         gulpCallback();
     });

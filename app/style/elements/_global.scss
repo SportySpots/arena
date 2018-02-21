@@ -1,7 +1,24 @@
 body {
-  background-image: url('../assets/desktop-bg.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
+  overflow-x: hidden;
+
+  // background: url('../assets/desktop-bg.svg') no-repeat center center fixed;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  
+  background-color: $color-pri-green;
+  
+  &.organize {
+    background-color: $color_green3;
+  }
+
+  &.join {
+    background-color: $color_green2;
+  }
+  transition: .5s background-color;
+
+  * {
+    transition: .3s all;
+  }
 }
 
 main {
@@ -15,19 +32,109 @@ main {
 }
 
 .contact-section {
+  margin: 2em auto;
+  
+  @include media(">large") {
+    padding-left: 3em;
+    padding-top: 3em;
+  }
+  
+  @include media("<large") {
+  order: 1;
+  }
+
+
+
   .contact-section__title--title {
-    font-size: 80px;
     margin: 0;
+    font-size: 4em;
+    font-weight: 500;
+    flex: 1;
+
+    @include media("<large") {
+      display: none !important;
+    }
+  }
+
+
+  .contact-section__subtitle {
+    padding-top: 1em;
   }
 }
 
-.contact-section {
+.impression-section {
+  margin: auto;
 
+  .impression-section__nav {
+    text-align: center;
+
+    font-family: sans-serif;
+    font-size: 2em;
+
+    .active {
+      color: $gold;
+    }
+  }
 }
+
+.more-info-section {
+  margin: 2em auto;
+
+  .discover, .organize, .join {
+    @include media(">large") {
+      height: 23em;
+    }
+  }
+
+  .discover__description {
+    font-size: 2em;
+    font-weight: 500;
+  }
+
+  .call-to-action {
+    margin: 0 .5em;
+
+    @include media("<large") {
+      display: flex;
+      justify-content: center;
+    }
+
+  .call-to-action__image {
+      width: 10em;
+    }
+  }
+}
+
+.navigation {
+  @include media(">large") {
+    margin-top: 5em;
+  }
+  @include media("<large") {
+    display: flex;
+    justify-content: center;
+  }
+
+
+  a {
+    margin-right: 1em;
+
+    text-decoration: none;
+
+    color: $white;
+
+    font-size: 1.2em;
+    font-weight: 600;
+
+    &.active {
+      border-bottom: .1em solid $white;
+    }
+  }
+}
+
 
 //temp
 
 img.toggle {
-  width: 300px;
+  width: 20em;
   margin: 0 auto;
 }

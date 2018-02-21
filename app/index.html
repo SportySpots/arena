@@ -1,43 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>SportySpots Contact Form</title>
-        <link href="https://fonts.googleapis.com/css?family=Rajdhani:400,500,600" rel="stylesheet">
-        <link href="/css/style.css" rel="stylesheet" />
-        <script src="modernizr-custom.js"></script>
-        <script src="formspree.js"></script>
-        <script src="main.js"></script>
-    </head>
 
-    <body>
-        <header class="header row">
-            <div class="header__content col-md-12">
-                <img class="header__content--logo" src="assets/SportySpotsLogo.svg" alt="SportySpots logo" height="80" width="80" align="middle">
-                <h1 class="header__content--title">Sportyspots</h1>
-                <div class="header__content--page-title">
-                    <h2 class="title landscape toggle discover">Contact</h2>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SportySpots | Vind en organiseer een potje sport</title>
+    <link href="https://fonts.googleapis.com/css?family=Rajdhani:400,500,600" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet" />
+    <script src="modernizr-custom.js"></script>
+    <script src="formspree.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <header class="header container">
+        <div class="row">
+            <div class="header-bg">
+
+            </div>
+            <div class="header-content col-xs-12">
+                <div class="header-content__wrap">
+                    <img class="header-content__wrap--logo" src="assets/SportySpotsLogo.svg" alt="SportySpots logo" height="40" width="40" align="middle">
+                    <h3 class="header-content__wrap--title">Sportyspots</h3>
+                </div>
+                <div class="header-content--page-title">
+                    <h4 class="header-content__nav--title"></h4>  
                 </div>
             </div>
-        </header>
+        </div>
+    </header>
 
-        <main>
-            <div class="row">
-                <div class="contact contact-section col-xs-12 col-md-4"> <!-- Remove contact -->
-                    <div class="contact-section__title">
-                        <h2 class="contact-section__title--title toggle discover">Discover</h2>
-                        <h2 class="contact-section__title--title toggle organize">Organize a game</h2>
-                        <h2 class="contact-section__title--title toggle join">Join a game</h2>
-                    </div>
+    <main class="main container">
+        <div class="row">
+            <div class="contact contact-section col-xs-12 col-md-4">
+                <!-- Remove contact -->
+                <div class="contact-section__title">
+                    <h2 class="contact-section__title--title toggle discover">Ontdek nieuwe sportplekken</h2>
+                    <h2 class="contact-section__title--title toggle organize">Organiseer een potje sport</h2>
+                    <h2 class="contact-section__title--title toggle join">Doe mee met sport events</h2>
+                </div>
 
-                    <form class="contact-section__form">
-                        <input class="contact-section__form--form-element" type="text" name="fullname" placeholder="Full name">
+                <div class="contact-section__subtitle">
+                    <h3>Ik wil de app graag testen</h3>
+                </div>
 
-                        <input class="contact-section__form--form-element" type="email" name="email" placeholder="Email address">
+                <form class="contact-section__form">
+                    <!-- <input class="contact-section__form--form-element" type="text" name="fullname" placeholder="Full name"> -->
 
-                        <select class="contact-section__form--form-element">
+                    <input id="input_email" class="contact-section__form--form-element" type="email" name="email" placeholder="Email address">
+
+                    <!-- <select class="contact-section__form--form-element">
                             <option value="" hidden>Your favourite sport</option>
                             <option value="football">Football</option>
                             <option value="tennis">Tennis</option>
@@ -51,63 +64,68 @@
                             <option value="golf">Golf</option>
                             <option value="skating">Skating</option>
                             <option value="yoga">Yoga</option>
-                        </select>
+                        </select> -->
 
-                        <button class="contact-section__form--form-element">Submit</button>
-                    </form>
+                    <button id="button_subscribe" class="contact-section__form--form-element">Submit</button>
+                </form>
+            </div>
+
+            <div class="col-xs-12 col-md-4 impression-section">
+                <img class="toggle discover" src="assets/SportySpotsSearch.png">
+                <img class="toggle organize" src="assets/SportySpotsPlan.png">
+                <img class="toggle join" src="assets/SportySpotsJoin.png">
+
+                <!-- <div class="impression-section__nav">
+                    <span class="discover active">•</span>
+                    <span class="organize">•</span>
+                    <span class="join">•</span>
+                </div> -->
+            </div>
+
+            <div class="col-xs-12 col-md-4 more-info-section">
+                <nav id="navigation" class="navigation">
+                    <a class="navitem landing" href="discover">Ontdek</a>
+                    <a class="navitem" href="organize">Organiseer</a>
+                    <a class="navitem" href="join">Doe mee</a>
+                </nav>
+
+                <div class="toggle discover">
+                    <p class="discover__description">Krijg toegang tot een compleet overzicht van alle sportplekken bij jouw in de buurt</p>
                 </div>
 
-                <div class="col-xs-12 col-md-4">
-                    <img class="toggle discover" src="assets/SportySportsSearch.png">
-                    <img class="toggle organize" src="assets/SportySpotsPlanAGame.png">
-                    <img class="toggle join" src="assets/SportySpotsOrganizeGame.png">
+                <div class="toggle organize">
+                    <p class="discover__description">Organiseer een potje sport met vrienden of andere sporters</p>
                 </div>
 
-                <div class="col-xs-12 col-md-4">
-                    <nav id="navigation" class="navigation">
-                        <a href="discover">Discover</a>
-                        <a href="organize">Organize</a>
-                        <a href="join">Join</a>
-                    </nav>
+                <div class="toggle join">
+                    <p class="discover__description">Doe laagdrempelig mee met verschillende type sport events</p>
+                </div>
 
-                    <div class="toggle discover">
-                        <p>Get access to a complete overview of all the sportyspots in town.</p>
-                    </div>
+                <div class="call-to-action">
+                    <a>
+                        <img class="call-to-action__image" src="assets/google-play.png" alt="SportySpots Playstore">
+                    </a>
 
-                    <div class="toggle organize">
-                        <p>Easily plan a game of sports with your friend or other supporters.</p>
-                    </div>
-
-                    <div class="toggle join">
-                        <p>Find sports games to join, see live check-ins & share match results.</p>
-                    </div>
+                    <a>
+                        <img class="call-to-action__image" src="assets/appstore.png" alt="SportySpots Appstore">
+                    </a>
                 </div>
             </div>
-        </main>
+        </div>
+    </main>
+    <footer class="footer container">
+        <p class="footer__text">Met ♥ gemaakt in Amsterdam • © 2018 SportySpots </p>
+    </footer>
 
-        <!-- <div class="container mobile">
-            <div>
-                <img src="assets/SportySportsSearch.png">
-                <div>Get access to a complete overview of all the sportyspots in town.</div>
-            </div>
+    <script>
+        if (!Modernizr.svg) {
+            var i = document.getElementsByTagName("img"),
+                j, y;
+            for (j = i.length; j--;) y = i[j].src, y.match(/svg$/) && (i[j].src = y.slice(0, -3) + "png")
+        }
+    </script>
 
-            <div>
-                <img src="assets/SportySpotsPlanAGame.png">
-                <div>Easily plan a game of sports with your friend or other supporters.</div>
-            </div>
+    <script src="http://code.jquery.com/jquery-3.3.1.slim.js" integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA=" crossorigin="anonymous"></script>
+</body>
 
-            <div>
-                <img src="assets/SportySpotsOrganizeGame.png">
-                <div>Find sports games to join, see live check-ins & share match results.</div>
-            </div>
-        </div> -->
-
-        <script>
-            if (!Modernizr.svg) {
-                var i = document.getElementsByTagName("img"),
-                    j, y;
-                for (j = i.length; j--;) y = i[j].src, y.match(/svg$/) && (i[j].src = y.slice(0, -3) + "png")
-            }
-        </script>
-    </body>
 </html>
