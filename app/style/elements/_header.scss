@@ -2,14 +2,14 @@
   .header-bg {
     display: none;
     position: absolute;
-    background-color: $color_dark_green;
-    width: 100%;
-    height: 12em;
-    left: 0;
+    background-color: rgba($color: #00353A, $alpha: 0.84);
+    width: 140%;
+    height: 38em;
+    left: -10em;
     right: 0;
-    top: -2em;
+    top: -10em;
     z-index: -1;
-    transform: rotate(-2deg);
+    transform: rotate(-4deg);
 
     @include media(">medium") {
       display: block;
@@ -32,9 +32,13 @@
 
       .header-content__wrap--title {
         margin: .1em 0 0 .5em;
-
         text-transform: uppercase;
+        font-weight: 600;
       }
+    }
+    .header-content__nav--title {
+      text-transform: uppercase;
+      font-weight: 500;
     }
     .header-content--page-title {
       @include media(">medium") {
